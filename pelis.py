@@ -23,7 +23,7 @@ if eleccion == 1:
 									params={'s':buscar,
 									'type':'movie'}).json()
 
-	for x in range (5):
+	for x in range(5):
 		print(Fore.YELLOW + Style.BRIGHT +"Busquedas encontradas: ")
 		print(Fore.BLUE + Style.BRIGHT + peliculas['Search'][x]['Title'])
 		print(Fore.BLUE + Style.BRIGHT + "ID: ",peliculas['Search'][x]['imdbID'])
@@ -148,9 +148,6 @@ elif eleccion == 3:
 			print()	
 		elif eleccion2 == "4":
 			print(Fore.BLUE + Style.BRIGHT +"Fecha de estreno: ",iddado['Released'])
-			print()
-		elif eleccion2 == "5":
-			print(Fore.BLUE + Style.BRIGHT +"Productora: ",iddado['Production'])
 			print()
 		else:
 			print(Fore.RED + Style.BRIGHT +"Opción incorrecta")
